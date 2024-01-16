@@ -1,0 +1,30 @@
+Spark Command: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -cp /opt/spark/conf/:/opt/spark/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://localhost:7077
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+23/08/31 15:41:46 INFO Worker: Started daemon with process name: 31222@DESKTOP-L15E33E
+23/08/31 15:41:46 INFO SignalUtils: Registering signal handler for TERM
+23/08/31 15:41:46 INFO SignalUtils: Registering signal handler for HUP
+23/08/31 15:41:46 INFO SignalUtils: Registering signal handler for INT
+23/08/31 15:41:46 WARN Utils: Your hostname, DESKTOP-L15E33E resolves to a loopback address: 127.0.1.1; using 172.30.116.226 instead (on interface eth0)
+23/08/31 15:41:46 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+23/08/31 15:41:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/08/31 15:41:48 INFO SecurityManager: Changing view acls to: root
+23/08/31 15:41:48 INFO SecurityManager: Changing modify acls to: root
+23/08/31 15:41:48 INFO SecurityManager: Changing view acls groups to: 
+23/08/31 15:41:48 INFO SecurityManager: Changing modify acls groups to: 
+23/08/31 15:41:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+23/08/31 15:41:50 INFO Utils: Successfully started service 'sparkWorker' on port 37349.
+23/08/31 15:41:50 INFO Worker: Worker decommissioning not enabled.
+23/08/31 15:41:51 INFO Worker: Starting Spark worker 172.30.116.226:37349 with 4 cores, 16.0 GiB RAM
+23/08/31 15:41:51 INFO Worker: Running Spark version 3.4.1
+23/08/31 15:41:51 INFO Worker: Spark home: /opt/spark
+23/08/31 15:41:51 INFO ResourceUtils: ==============================================================
+23/08/31 15:41:51 INFO ResourceUtils: No custom resources configured for spark.worker.
+23/08/31 15:41:51 INFO ResourceUtils: ==============================================================
+23/08/31 15:41:51 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+23/08/31 15:41:52 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+23/08/31 15:41:52 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://172.30.116.226:8081
+23/08/31 15:41:52 INFO Worker: Connecting to master localhost:7077...
+23/08/31 15:41:52 INFO TransportClientFactory: Successfully created connection to localhost/127.0.0.1:7077 after 161 ms (0 ms spent in bootstraps)
+23/08/31 15:41:53 INFO Worker: Successfully registered with master spark://localhost:7077
+23/09/01 08:10:01 ERROR Worker: RECEIVED SIGNAL TERM

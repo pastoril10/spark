@@ -1,0 +1,28 @@
+Spark Command: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -cp /opt/spark/conf/:/opt/spark/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host localhost --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+23/08/31 15:40:31 INFO Master: Started daemon with process name: 29984@DESKTOP-L15E33E
+23/08/31 15:40:31 INFO SignalUtils: Registering signal handler for TERM
+23/08/31 15:40:31 INFO SignalUtils: Registering signal handler for HUP
+23/08/31 15:40:31 INFO SignalUtils: Registering signal handler for INT
+23/08/31 15:40:31 WARN Utils: Your hostname, DESKTOP-L15E33E resolves to a loopback address: 127.0.1.1; using 172.30.116.226 instead (on interface eth0)
+23/08/31 15:40:31 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+23/08/31 15:40:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/08/31 15:40:34 INFO SecurityManager: Changing view acls to: root
+23/08/31 15:40:34 INFO SecurityManager: Changing modify acls to: root
+23/08/31 15:40:34 INFO SecurityManager: Changing view acls groups to: 
+23/08/31 15:40:34 INFO SecurityManager: Changing modify acls groups to: 
+23/08/31 15:40:34 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+23/08/31 15:40:35 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+23/08/31 15:40:35 INFO Master: Starting Spark master at spark://localhost:7077
+23/08/31 15:40:35 INFO Master: Running Spark version 3.4.1
+23/08/31 15:40:36 INFO JettyUtils: Start Jetty 0.0.0.0:8080 for MasterUI
+23/08/31 15:40:36 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+23/08/31 15:40:37 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://172.30.116.226:8080
+23/08/31 15:40:39 INFO Master: I have been elected leader! New state: ALIVE
+23/08/31 15:41:53 INFO Master: Registering worker 172.30.116.226:37349 with 4 cores, 16.0 GiB RAM
+23/09/01 08:10:01 INFO Master: 127.0.0.1:43988 got disassociated, removing it.
+23/09/01 08:10:01 INFO Master: 172.30.116.226:37349 got disassociated, removing it.
+23/09/01 08:10:01 INFO Master: Removing worker worker-20230831154150-172.30.116.226-37349 on 172.30.116.226:37349
+23/09/01 08:10:01 INFO Master: Telling app of lost worker: worker-20230831154150-172.30.116.226-37349
+23/09/01 08:10:18 ERROR Master: RECEIVED SIGNAL TERM

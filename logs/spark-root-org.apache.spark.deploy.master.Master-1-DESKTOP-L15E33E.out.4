@@ -1,0 +1,54 @@
+Spark Command: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -cp /opt/spark/conf/:/opt/spark/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host 206.62.69.51 --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+23/08/15 17:53:22 INFO Master: Started daemon with process name: 9389@DESKTOP-L15E33E
+23/08/15 17:53:22 INFO SignalUtils: Registering signal handler for TERM
+23/08/15 17:53:22 INFO SignalUtils: Registering signal handler for HUP
+23/08/15 17:53:22 INFO SignalUtils: Registering signal handler for INT
+23/08/15 17:53:22 WARN Utils: Your hostname, DESKTOP-L15E33E resolves to a loopback address: 127.0.1.1; using 172.30.116.226 instead (on interface eth0)
+23/08/15 17:53:22 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+23/08/15 17:53:24 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/08/15 17:53:24 INFO SecurityManager: Changing view acls to: root
+23/08/15 17:53:24 INFO SecurityManager: Changing modify acls to: root
+23/08/15 17:53:24 INFO SecurityManager: Changing view acls groups to: 
+23/08/15 17:53:24 INFO SecurityManager: Changing modify acls groups to: 
+23/08/15 17:53:24 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7077. Attempting port 7078.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7078. Attempting port 7079.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7079. Attempting port 7080.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7080. Attempting port 7081.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7081. Attempting port 7082.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7082. Attempting port 7083.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7083. Attempting port 7084.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7084. Attempting port 7085.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7085. Attempting port 7086.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7086. Attempting port 7087.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7087. Attempting port 7088.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7088. Attempting port 7089.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7089. Attempting port 7090.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7090. Attempting port 7091.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7091. Attempting port 7092.
+23/08/15 17:53:25 WARN Utils: Service 'sparkMaster' could not bind on port 7092. Attempting port 7093.
+23/08/15 17:53:25 ERROR SparkUncaughtExceptionHandler: Uncaught exception in thread Thread[main,5,main]
+java.net.BindException: Cannot assign requested address: Service 'sparkMaster' failed after 16 retries (starting from 7077)! Consider explicitly setting the appropriate port for the service 'sparkMaster' (for example spark.ui.port for SparkUI) to an available port or increasing spark.port.maxRetries.
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:459)
+	at java.base/sun.nio.ch.Net.bind(Net.java:448)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+23/08/15 17:53:25 INFO ShutdownHookManager: Shutdown hook called
